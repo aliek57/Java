@@ -1,0 +1,32 @@
+package exercicios_poo;
+
+import java.util.Scanner;
+
+public class Ex10 {
+
+	public static int sup, inf, soma=0;
+	
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		
+		do {
+			System.out.println("limite inferior: ");
+			inf = entrada.nextInt();
+			
+			System.out.println("limite superior: ");
+			sup = entrada.nextInt();
+			
+			if(inf>=sup) {
+				System.out.println("o limite inferior nao pode ser maior ou igual que o limite superior, tente novamente\n\n");
+			}
+		}while(inf>=sup);
+		
+		for(int i=inf; i<=sup; i++) {
+			if(i%2==0) {
+				soma+=i;
+			}
+		}
+		
+		System.out.println("soma = " + soma + "\n");
+	}
+}
