@@ -1,0 +1,21 @@
+package exercicios_poo;
+
+import java.util.Scanner;
+
+public class Ex4 {
+
+	public static float conta, gorgeta, total=0;
+	
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println("valor gasto: ");
+		conta = entrada.nextFloat();
+		
+		gorgeta = (float) (conta * 0.10);
+		total = conta + gorgeta;
+		
+		System.out.println("total: " + total);
+		
+	}
+}
