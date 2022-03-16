@@ -1,19 +1,19 @@
 package exercicios_poo;
 
-import java.util.Scanner;
-
 public class Ex9 {
-
-	public static int n, tab;
 	
 	public static void main(String[] args) {
-		Scanner entrada = new Scanner(System.in);
-		
-		n = entrada.nextInt();
-		
-		for(int i=1; i<=n; i++) {
-			tab = i*n;
-			System.out.println(i + "*" + n + " = " + tab);
-		}
+		int tab=1, n=1;
+	
+		do {
+			for(int i=1; i<=10; i++) {
+				tab = i*n;
+				System.out.println(i + "*" + n + " = " + tab);
+			}
+			
+			System.out.println();
+			
+			n++;
+		}while(n<=10);
 	}
 }
