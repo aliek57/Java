@@ -1,0 +1,26 @@
+package exercicios_poo;
+
+import java.util.Scanner;
+
+public class Ex6 {
+
+	public static float nota;
+	
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		
+		nota = entrada.nextFloat();
+		
+		if(nota>=9.0) {
+			System.out.println("A");
+		}else if(nota>=7.0 && nota<9.0) {
+			System.out.println("B");
+		}else if(nota>=5.0 && nota<7.0) {
+			System.out.println("C");
+		}else if(nota>=2.5 && nota<5.0) {
+			System.out.println("D");
+		}else {
+			System.out.println("E");
+		}	
+	}
+}
