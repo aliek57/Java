@@ -1,0 +1,19 @@
+package exercicios_poo;
+
+import java.util.Scanner;
+
+public class Ex5 {
+
+	public static String nome;
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);
+		
+		System.out.println("Nome: ");
+		nome = entrada.next();
+		
+		System.out.println("==============================\n");
+		System.out.println("Disciplina Fundamentos de Programação\n");
+		System.out.println("Nome: " + nome + "\n");
+		System.out.println("==============================\n");
+	}
+}
