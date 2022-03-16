@@ -1,0 +1,19 @@
+package exercicios_poo;
+
+import java.util.Scanner;
+
+public class Ex7 {
+
+	public static void main(String[] args) {
+		int n;
+		
+		Scanner entrada = new Scanner(System.in);
+		
+		n = entrada.nextInt();
+		
+		do {
+			System.out.println(n + " ");
+			n--;
+		}while(n>=1);
+	}
+}
