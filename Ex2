@@ -1,0 +1,11 @@
+package exercicios_poo;
+
+public class Ex2 {
+
+	private static String nome="keila";
+	private static int idade=22;
+	
+	public static void main(String[] args) {
+		System.out.println("nome: " + nome + "\nidade: " + idade);
+	}
+}
