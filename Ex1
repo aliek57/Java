@@ -1,0 +1,23 @@
+package exercicios_poo;
+
+import java.util.Scanner;	// necessario importar para ler scanner
+
+public class Ex1 {
+
+	private static double n, ant, suc;	// var global (static pq chamei dentro de um metodo static
+	
+	public static void main(String[] args) {
+		Scanner entrada = new Scanner(System.in);	// scanner classe que abre para que o usuario digite no console
+													// new escaneando objeto
+													// criei uma vez mas vou usar mais de uma vez entao coloca encima
+		System.out.println("numero: ");
+		n = entrada.nextDouble();					// n recebe entrada .tipo da var
+		
+		ant = n-1;
+		suc = n+1;
+		
+		System.out.println("antecessor de " + n + ": " + ant);
+		System.out.println("sucessor de " + n + ": " + suc);
+	}
+	
+}
